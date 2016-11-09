@@ -359,7 +359,7 @@ the URL using email, social media, or your method of choice.
 
 To find the certificate URL, use one of the following methods.
 
-* Use the address bar.
+* Use the browser address bar.
 
   #. Open the certificate in your browser, and then select the certificate ID.
 
@@ -369,22 +369,21 @@ To find the certificate URL, use one of the following methods.
 
 * Get the URL from the certificate ID.
 
-  #. Open the certificate in your browser.
+  #. Open the certificate in your browser, and then right-click the certificate
+     ID.
 
-  #. Right-click the certificate ID to open the context menu.
-
-  #. Select **Copy Link Location**.
+  #. From the menu, select **Copy Link Location**.
 
      The URL is copied to your computer's clipboard.
 
-  #. Paste the clipboard contents to see the full URL.
+  #. Paste the clipboard contents to obtain the certificate URL.
 
 * Create the URL manually.
 
   #. Open the certificate in your browser, and then copy the certificate ID.
 
-  #. Use the following URL, replacing ``certificate_ID`` with the certificate ID
-     that you copied.
+  #. Use the following URL, replacing ``certificate_ID`` with the certificate
+     ID that you copied.
 
      ::
 
