@@ -367,24 +367,34 @@ To find the certificate URL, use one of the following methods.
 
   #. Copy the URL from the browser address bar.
 
-* Create the URL manually.
+* Get the URL from the certificate ID.
 
   #. Open the certificate in your browser.
 
-  #. Locate, but do not select, the certificate ID.
+  #. Right-click the certificate ID to open the context menu.
 
-  #. Use the following URL, replacing ``certificate_ID`` with the ID on your
-     certificate.
+  #. Select **Copy Link Location**.
+
+     The URL is copied to your computer's clipboard.
+
+  #. Paste the clipboard contents to see the full URL.
+
+* Create the URL manually.
+
+  #. Open the certificate in your browser, and then copy the certificate ID.
+
+  #. Use the following URL, replacing ``certificate_ID`` with the certificate ID
+     that you copied.
 
      ::
 
-       https://credentials.edx.org/credentials/<certificate_ID>
+       https://courses.edx.org/certificates/<certificate_ID>
 
      For example, your certificate URL might resemble the following URL.
 
      ::
 
-       https://credentials.edx.org/credentials/a1b2c3d4e5f6g7h8i9j10k11l12m13n1
+       https://courses.edx.org/certificates/a1b2c3d4e5f6g7h8i9j10k11l12m13n1
 
 =======================
 Share a PDF Certificate
