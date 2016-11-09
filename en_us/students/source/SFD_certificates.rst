@@ -292,12 +292,12 @@ You can share and print web certificates and PDF certificates.
   :local:
   :depth: 1
 
-=======================================
-Share a Web Certificate on Social Media
-=======================================
+===============================================
+Share a Web or PDF Certificate on Social Media
+===============================================
 
-You can share your web certificates on social media sites such as Facebook,
-LinkedIn, and Twitter.
+You can share your web and PDF certificates on social media sites such as
+Facebook, LinkedIn, and Twitter.
 
 .. note::
  You can use these steps to share course and program certificates on most
