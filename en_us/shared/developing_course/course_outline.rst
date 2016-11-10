@@ -126,19 +126,10 @@ Units>`.
 Add Content in the Course Outline
 ************************************************
 
-You add sections, subsections, and units directly in the outline.
+You can add content in the course outline by creating a new section,
+subsection, or unit, or by duplicating an existing unit, subsection, or
+section.
 
-* To add a section to the outline, select **New Section**. This option appears
-  at both the top of the page and below the current sections in the outline.
-  For more information, see :ref:`Create a Section`.
-
-*  To add a subsection to the end of the section, expand the section and select
-   **New Subsection**.
-
-* To add a unit to the end of a subsection, expand the subsection and select
-  **New Unit**.
-
-  The :ref:`unit<Developing Course Units>` page opens.
 
 .. the following note is for prerequisite exams, which are currently released in open edx only and not on edx.org.  when they are available on edx.org, this note should no longer be conditionalized.
 
@@ -149,6 +140,35 @@ You add sections, subsections, and units directly in the outline.
       the exam in the course outline. Before you can create an exam, you must
       set your course to require an entrance exam in Studio. For more
       information, see :ref:`Require an Entrance Exam`.
+
+
+==========================================
+Adding New Sections, Subsections, or Units
+==========================================
+
+* To add a section to the outline, select **New Section**. This option appears
+  at both the top of the page and below the current sections in the outline.
+  For more information, see :ref:`Create a Section`.
+
+*  To add a subsection to the end of the section, expand the section and select
+   **New Subsection**.
+
+* To add a unit to the end of a subsection, expand the subsection and select
+  **New Unit**. The :ref:`unit<Developing Course Units>` page opens.
+
+
+=======================================================
+Duplicating Existing Sections, Subsections, or Units
+=======================================================
+
+To add a section, subsection, or unit by duplicating content that already
+exists in the course outline, select the **Duplicate** icon for the item that
+you want to duplicate. You see a **Duplicating** indicator at the bottom of the Studio page.
+
+Duplicated items are added to the course outline immediately below the
+original item, with the name "Duplicate of..." assigned to it.
+
+
 
 .. _Modify Settings for Objects in the Course Outline:
 
