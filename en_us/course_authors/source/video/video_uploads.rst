@@ -11,7 +11,7 @@ Studio. This section describes the specifications met by successful video
 files, the steps to upload the files, and how you monitor video processing
 at edX.
 
-.. removed "how course teams enable the video upload process in Studio, "
+.. removed "how course teams enable the video upload process in Studio", which is commented out below in this file.
 
 * :ref:`Specifications for Successful Video Files`
 
@@ -179,6 +179,33 @@ When the status of an uploaded file changes to Ready, the file upload process
 is successful. If the status changes to Failed, the file upload process is not
 successful. You can monitor file progress on the **Video Uploads** page or
 download a report.
+
+
+.. _Delete Videos from Upload Page:
+
+==================================================
+Remove Videos from the Video Uploads List
+==================================================
+
+You can remove videos from the list of videos on **Video Uploads** page.
+
+Removing a video that was previously uploaded successfully and whose video ID
+is used in a video component does not affect its rendering in course content.
+
+To remove a video from the list of uploaded videos, follow these steps.
+
+#. Open the course in Studio.
+
+#. Select **Content**, then **Video Uploads**.
+
+#. In the **Previous Uploads** list, locate the row for the video that you
+   want to remove, then select the "X" icon in the **Action** column.
+
+#. In the confirmation dialog that appears, select **Remove** to continue with
+   the removal.
+
+   The selected video is removed from the **Previous Uploads** list.
+
 
 .. _Monitor Video Processing:
 
