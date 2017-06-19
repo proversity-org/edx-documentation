@@ -56,7 +56,7 @@ if on_rtd:
     html_context["on_rtd"] = on_rtd
     html_context["google_analytics_id"] = ''
     html_context["disqus_shortname"] = 'edx'
-    html_context["github_base_account"] = 'edx'
+    html_context["github_base_account"] = 'proversity-org'
     html_context["github_project"] = 'edx-documentation'
 
 html_theme = 'edx_theme'

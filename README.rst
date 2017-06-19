@@ -177,3 +177,14 @@ To add a release notes item, follow these steps.
    The doc team is tagged automatically when you open your PR and will complete
    any necessary copy editing. The doc team will also include the new files in
    the release notes index.
+
+======================
+Build the project
+======================
+
+.. code-block:: shell
+
+  $ sudo apt-get install python-sphinx
+  $ pip install -r shared/travis_requirements.txt
+  $ pip install -r shared/tools.txt
+  $ ./develop.sh en_us/install_operations/
