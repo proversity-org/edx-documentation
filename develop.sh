@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash 
 
 # Allows you to preview the HTML for a project "live" in a browser view that updates everytime an ReST file is changed.
 
