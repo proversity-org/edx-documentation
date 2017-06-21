@@ -15,4 +15,5 @@ port=${2:-8000}
 
 cd $project_dir
 make html
+
 sphinx-autobuild --ignore '*.swp' --ignore '*~' -b html -d build/doctrees -c source source build/html --host 0.0.0.0 --port $port

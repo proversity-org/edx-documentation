@@ -185,6 +185,11 @@ Build the project
 .. code-block:: shell
 
   $ sudo apt-get install python-sphinx
+  $ pip install -U pip setuptools
   $ pip install -r shared/travis_requirements.txt
   $ pip install -r shared/tools.txt
+  $ ./develop.sh en_us/
+
+  or
+
   $ ./develop.sh en_us/install_operations/
