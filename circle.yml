@@ -1,0 +1,32 @@
+general:
+    branches:
+        only:
+            - master
+
+dependencies:
+  pre:
+    - sudo apt-get update
+    - sudo apt-get install python-sphinx
+    - sudo apt-get install python-dev --fix-missing
+    - pip install awscli
+    - pip install -U pip setuptools
+    - aws configure set default.region eu-west-1
+  override:
+    - sleep 1
+    
+test:
+  override:
+    - sleep 1
+
+
+## Customize deployment commands
+deployment:
+  master:
+    branch: master
+    commands:
+      - pip install -r shared/travis_requirements.txt
+      - pip install -r shared/tools.txt
+      - ./develop.sh en_us/install_operations/:
+          timeout: 1700
+          
+          
