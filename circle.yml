@@ -17,6 +17,7 @@ dependencies:
     - pip install awscli
     - pip install -U pip setuptools
     - aws configure set default.region eu-west-1
+    - aws configure set preview.cloudfront true
   override:
     - sleep 1
     
