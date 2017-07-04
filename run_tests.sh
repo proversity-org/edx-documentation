@@ -86,7 +86,7 @@ for project in "${projects[@]}"; do
     fi
 
     if [ $num_warnings -gt 0 ]; then
-        project_build_status=1
+        project_build_status=0
         SPHINX_WARNINGS=$((SPHINX_WARNINGS + num_warnings))
     fi
 
