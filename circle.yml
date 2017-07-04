@@ -2,6 +2,12 @@ general:
     branches:
         only:
             - master
+            
+machine:
+  environment:
+    AWS_PROFILE: default
+    DESTINATION_BUCKET: docs.proversity.org
+    DIR: build/html
 
 dependencies:
   pre:
@@ -28,5 +34,6 @@ deployment:
       - pip install -r shared/tools.txt
       - cd en_us/install_operations/ && make html:
           timeout: 1700
+      - /bin/bash ../../deploy.sh
           
           
