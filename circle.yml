@@ -7,7 +7,7 @@ machine:
   environment:
     AWS_PROFILE: default
     DESTINATION_BUCKET: docs.proversity.org
-    DIR: build/html
+    DIR: en_us/install_operations/build/html
 
 dependencies:
   pre:
