@@ -23,6 +23,8 @@ dependencies:
     
 test:
   override:
+    - pip install -r shared/travis_requirements.txt
+    - pip install -r shared/tools.txt
     - ./run_tests.sh en_us/install_operations/
 
 
@@ -31,8 +33,6 @@ deployment:
   master:
     branch: master
     commands:
-      - pip install -r shared/travis_requirements.txt
-      - pip install -r shared/tools.txt
       - cd en_us/install_operations/ && make html:
           timeout: 1700
       - /bin/bash deploy.sh
