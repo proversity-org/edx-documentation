@@ -34,6 +34,6 @@ deployment:
       - pip install -r shared/tools.txt
       - cd en_us/install_operations/ && make html:
           timeout: 1700
-      - /bin/bash ../../deploy.sh
+      - /bin/bash deploy.sh
           
           
