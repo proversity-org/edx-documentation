@@ -26,7 +26,7 @@ deployment:
     commands:
       - pip install -r shared/travis_requirements.txt
       - pip install -r shared/tools.txt
-      - ./develop.sh en_us/install_operations/:
+      - cd en_us/install_operations/ && make html:
           timeout: 1700
           
           
