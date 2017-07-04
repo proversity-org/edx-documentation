@@ -22,9 +22,8 @@ dependencies:
     - sleep 1
     
 test:
-    - ./run_tests.sh en_us/install_operations/
   override:
-    - sleep 1
+    - ./run_tests.sh en_us/install_operations/
 
 
 ## Customize deployment commands
