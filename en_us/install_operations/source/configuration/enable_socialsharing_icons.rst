@@ -41,7 +41,7 @@ file, which is located one level above the ``edx-platform`` directory.
 #. In the ``lms.env.json`` file, modify the ``SOCIAL_SHARING_SETTINGS``
    dictionary as needed.
 
-   .. code-block:: bash
+   .. code-block:: none
 
         SOCIAL_SHARING_SETTINGS = {
             'CUSTOM_COURSE_URLS': True,
@@ -67,10 +67,10 @@ file, which is located one level above the ``edx-platform`` directory.
    c. If you set ``CUSTOM_COURSE_URLS`` to ``True``, you must `Enable Custom
       Course URLs`_.
 
-#. Configure the ``SOCIAL_MEDIA_FOOTER_NAMES`` array to the order of links
-   you want learners to see in the footer.
+#. Configure the ``SOCIAL_MEDIA_FOOTER_NAMES`` array in the ``lms.env.json``
+   file to set the order of links you want learners to see in the footer.
 
-   .. code-block:: bash
+   .. code-block:: none
 
         SOCIAL_MEDIA_FOOTER_NAMES = [
             "facebook",
@@ -81,11 +81,12 @@ file, which is located one level above the ``edx-platform`` directory.
             "reddit",
         ]
 
-#. Configure the ``SOCIAL_MEDIA_FOOTER_DISPLAY`` dictionary to define how you
-   want social media icons to be displayed. For each social media icon you
-   enable, you define a ``title``, ``icon``, and ``action``.
+#. Configure the ``SOCIAL_MEDIA_FOOTER_DISPLAY`` dictionary in the
+   ``lms.env.json`` file  to define how you want social media icons to be
+   displayed. For each social media icon you enable, you define a ``title``,
+   ``icon``, and ``action``.
 
-   .. code-block:: bash
+   .. code-block:: none
 
         "facebook": {
             "title": _("Facebook"),
@@ -117,7 +118,7 @@ You must set the ``CUSTOM_COURSE_URLS`` parameter to ``True`` in both the
 ``lms.env.json`` and ``cms.env.json`` files. In the ``cms.env.json`` file, this
 parameter is the only social sharing setting.
 
-.. code-block:: bash
+.. code-block:: none
 
     SOCIAL_SHARING_SETTINGS = {
         'CUSTOM_COURSE_URLS': True
@@ -138,9 +139,5 @@ URL in the **Social Media Sharing URL** setting.
 This URL is provided to the social sharing site for linking back to a course
 location. This URL is used only if you have enabled custom URLs in your
 instance of Open edX.
-
-.. note:: If custom URLs are enabled but a course team does not provide a
-  value in the **Social Media Sharing URL** advanced setting in Studio,
-  social sharing icons are not visible in the LMS for that course.
 
 .. include:: ../../../links/links.rst

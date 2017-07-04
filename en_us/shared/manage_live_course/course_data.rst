@@ -29,7 +29,7 @@ To view this course data, follow these steps.
 
 #. View the live version of your course.
 
-#. Select **Instructor**, and then select **Course Info** if necessary.
+#. Select **Instructor**, and then select **Course Info**.
 
    The **Basic Course Information** section of the page that opens lists
    information about the course.
@@ -80,11 +80,11 @@ Studio, or derived from data that you define in Studio.
 
 * **Course Start Date**: The date and time that the course is scheduled to
   start. This date can be changed in Studio (not recommended if your course is
-  live). For more information, see :ref:`Determine Start and End Dates`.
+  live). For more information, see :ref:`Guidelines for Start and End Dates`.
 
 * **Course End Date**: The date and time that the course is scheduled to end.
   This date can be changed in Studio (not recommended if your course is live).
-  For more information, see :ref:`Determine Start and End Dates`.
+  For more information, see :ref:`Guidelines for Start and End Dates`.
 
 * **Has the course started**: Derived from the **Course Start Date** value and
   the current date.

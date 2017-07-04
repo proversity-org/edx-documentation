@@ -17,7 +17,7 @@ Overview
 Organizations and course teams can generate certificates for learners who pass
 a course. Learners can view, print, or share their certificates.
 
-For information about certificates, see :ref:`opencoursestaff:Setting Up Course
+For information about certificates, see :ref:`opencoursestaff:Setting Up
 Certificates` in *Building and Running an Open edX Course* or
 :ref:`openlearners:Print a Web Certificate` in the *Open edX Learner's Guide*.
 
@@ -39,7 +39,7 @@ files, which are located one level above the ``edx-platform`` directory.
 #. In the ``lms.env.json`` and ``cms.env.json`` files, set the value of
    ``CERTIFICATES_HTML_VIEW`` within the ``FEATURES`` object  to ``true``.
 
-   .. code-block:: bash
+   .. code-block:: none
 
      "FEATURES": {
          ...
@@ -83,7 +83,10 @@ Configure Certificates for Your Open edX Instance
    ``document_body_class_append``. The mode name should match your course mode
    name exactly. An example follows.
 
-   .. code-block:: bash
+   For more information about course modes, sometimes called enrollment modes
+   or enrollment tracks, see :ref:`enrollment track<enrollment_track_g>`.
+
+   .. code-block:: none
 
     {
         "default": {
@@ -133,8 +136,11 @@ Discontinue Audit Track Certificates
 Organizations that offer certificates to audit track learners who pass a
 course can discontinue generation of this type of certificate. For example,
 your organization makes a strategic decision to offer certificates only to
-learners who select an enrollment mode other than "audit". Learners can
+learners who select an enrollment track other than "audit". Learners can
 continue to audit courses, but they no longer receive certificates.
+
+For more information about course tracks, also called enrollment modes or
+enrollment tracks, see :ref:`enrollment track<enrollment_track_g>`.
 
 An outline of the steps you might take if your organization decides to stop
 offering certificates for learners in the audit track follows.
@@ -177,8 +183,8 @@ Assets for HTML certificates exist in the following locations.
   in creating certificates, such as images, fonts, and sass/css files.
 
   .. note:: The organization logo on a certificate is uploaded in Studio. For
-     details, see :ref:`opencoursestaff:Setting Up Course Certificates` in
-     *Building and Running an Open edX Course*.
+     details, see :ref:`opencoursestaff:Setting Up Certificates` in *Building
+     and Running an Open edX Course*.
 
 *****************************************
 Configure Certificates Within Each Course
@@ -188,7 +194,7 @@ Within Studio, course team members with the Admin role can create and edit a
 certificate configuration that is used to generate certificates for their
 course, including adding signatories and images for organization logo and
 signature images for signatories. For details, :ref:`opencoursestaff:Setting Up
-Course Certificates` in *Building and Running an Open edX Course*.
+Certificates` in *Building and Running an Open edX Course*.
 
 .. _Generate Certificates for a Course:
 

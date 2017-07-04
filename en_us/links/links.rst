@@ -4,17 +4,19 @@
 
 .. EdX Links
 
+.. _Math Formatting in Course Discussions: https://courses.edx.org/courses/edX/DemoX.1/2014/wiki/edX.DemoX.1.2014/math-formatting-course-discussions/
+
 .. _change log for the Backbone.js library: https://github.com/jashkenas/backbone/blob/master/index.html#L4299
 
 .. _Query string syntax: https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax
 
 .. _Coming Soon Programs Page: https://open.edx.org/announcements/coming-soon-xseries-programs-page
 
-.. _Using edX Insights: http://edx.readthedocs.org/projects/edx-insights/en/latest/
+.. _Using edX Insights: http://edx.readthedocs.io/projects/edx-insights/en/latest/
 
-.. _Review Answers to Graded Problems: http://edx.readthedocs.org/projects/edx-insights/en/latest/performance/Performance_Answers.html#review-answers-to-graded-problems
+.. _Review Answers to Graded Problems: http://edx.readthedocs.io/projects/edx-insights/en/latest/performance/Performance_Answers.html#review-answers-to-graded-problems
 
-.. _Review Answers to Ungraded Problems: http://edx.readthedocs.org/projects/edx-insights/en/latest/performance/Performance_Ungraded.html#review-answers-to-ungraded-problems
+.. _Review Answers to Ungraded Problems: http://edx.readthedocs.io/projects/edx-insights/en/latest/performance/Performance_Ungraded.html#review-answers-to-ungraded-problems
 
 .. _Open edX Analytics wiki: http://edx-wiki.atlassian.net/wiki/display/OA/Open+edX+Analytics+Home
 
@@ -22,7 +24,7 @@
 
 .. _Entity Relationship Diagram for ORA Data: https://openedx.atlassian.net/wiki/display/AN/Entity+Relationship+Diagram+for+ORA+Data
 
-.. _edX Enrollment API: http://edx.readthedocs.org/projects/edx-platform-api/en/latest/enrollment/index.html
+.. _edX Enrollment API: http://edx.readthedocs.io/projects/edx-platform-api/en/latest/enrollment/index.html
 
 .. _course-data: http://groups.google.com/a/edx.org/forum/#!forum/course-data
 
@@ -106,7 +108,7 @@
 
 .. _VirtualEnv Installation: https://virtualenv.pypa.io/en/latest/installation.html
 
-.. _VirtualEnvWrapper: http://virtualenvwrapper.readthedocs.org/en/latest
+.. _VirtualEnvWrapper: http://virtualenvwrapper.readthedocs.io/en/latest
 
 .. _XBlock SDK: https://github.com/edx/xblock-sdk
 
@@ -138,11 +140,7 @@
 
 .. _edx-platform: https://github.com/edx/edx-platform
 
-.. _edx configuration repository: https://github.com/edx/configuration
-
 .. _configuration: https://github.com/edx/configuration
-
-.. _edx configuration repository wiki: https://github.com/edx/configuration/wiki
 
 .. _The migrate.sh script: https://github.com/edx/configuration/blob/named-release/dogwood.rc/util/vagrant/migrate.sh
 
@@ -150,7 +148,7 @@
 
 .. _Devstack wiki: https://github.com/edx/configuration/wiki/edX-Developer-Stack
 
-.. _Developing on Devstack: https://github.com/edx/edx-platform/wiki/Developing-on-the-edX-Developer-Stack
+.. _Developing on Devstack: https://openedx.atlassian.net/wiki/display/OpenOPS/Running+Devstack
 
 .. _forum migration described on the Open edX wiki: https://openedx.atlassian.net/wiki/display/TNL/Migrating+the+Discussion+Forums+to+Support+Teams+Discussion+Filtering
 
@@ -164,8 +162,6 @@
 
 .. _edX Analytics Installation: https://openedx.atlassian.net/wiki/display/OpenOPS/edX+Analytics+Installation
 
-.. _Open edX Native Installation: https://openedx.atlassian.net/wiki/x/bgCXAw
-
 .. _ux.edx.org: http://ux.edx.org/
 
 .. _ui-toolkit.edx.org: http://ui-toolkit.edx.org/
@@ -176,8 +172,6 @@
 
 .. _iOS: http://github.com/edx/edx-app-ios
 .. _Android: http://github.com/edx/edx-app-android
-
-.. _Ease: https://github.com/edx/ease
 
 .. _edX Managing the Full Stack: https://github.com/edx/configuration/wiki/edX-Managing-the-Full-Stack
 
@@ -220,7 +214,11 @@
 
 .. _Release Pages: https://openedx.atlassian.net/wiki/pages/viewpage.action?pageId=12550314
 
-.. _Discern: http://code.edx.org/discern/
+.. _Open edX Installation options: https://openedx.atlassian.net/wiki/x/wwCXAw
+
+.. _Open edX Native 12.04 Installation: https://openedx.atlassian.net/wiki/x/bgCXAw
+
+.. _Open edX Native Installation: https://openedx.atlassian.net/wiki/x/g4G6C
 
 
 
@@ -230,19 +228,19 @@
 .. _E-Commerce service: https://github.com/edx/ecommerce
 .. _Transifex: https://www.transifex.com/
 .. _configure the Transifex client: http://docs.transifex.com/client/config/
-.. _Communications API: http://django-oscar.readthedocs.org/en/latest/howto/how_to_customise_oscar_communications.html#communications-api
-.. _django-compressor: http://django-compressor.readthedocs.org/
+.. _Communications API: http://django-oscar.readthedocs.io/en/latest/howto/how_to_customise_oscar_communications.html#communications-api
+.. _django-compressor: http://django-compressor.readthedocs.io/
 .. _RequireJS: http://requirejs.org/
 .. _OpenID Connect: http://openid.net/specs/openid-connect-core-1_0.html
 .. _devstack: https://github.com/edx/configuration/wiki/edX-Developer-Stack
 .. _Testing in Django: https://docs.djangoproject.com/en/1.8/topics/testing/
 .. _Django sites framework: https://docs.djangoproject.com/en/1.8/ref/contrib/sites
 .. _Jasmine: http://jasmine.github.io/2.3/introduction.html
-.. _edX JavaScript standards: https://github.com/edx/edx-platform/wiki/Javascript-standards-for-the-edx-platform
+.. _edX JavaScript Style Guide: http://edx.readthedocs.io/projects/edx-developer-guide/en/latest/style_guides/javascript_guidelines.html
 .. _JSHint: http://www.jshint.com/
 .. _jscs: https://www.npmjs.org/package/jscs
-.. _Waffle: http://waffle.readthedocs.org/en/latest
-.. _Waffle documentation: http://waffle.readthedocs.org/en/latest
+.. _Waffle: http://waffle.readthedocs.io/en/latest
+.. _Waffle documentation: http://waffle.readthedocs.io/en/latest
 .. _Segment: https://segment.com
 .. _CourseTalk: https://www.coursetalk.com/
 .. _Google Play: https://play.google.com/store/apps/details?id=org.edx.mobile
@@ -278,6 +276,8 @@
 .. _Elastic MapReduce: http://aws.amazon.com/elasticmapreduce/
 
 .. _default EC2 role for Amazon EMR: http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-iam-roles-defaultroles.html#emr-iam-roles-defaultec2
+
+.. _Default IAM Roles for Amazon EMR: http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles-defaultroles.html#emr-iam-roles-defaultec2
 
 .. _a single public subnet: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario1.html
 
@@ -353,7 +353,7 @@
 
 .. _Microsoft Azure: https://azure.microsoft.com/en-us/pricing/free-trial/
 
-.. _python-social-auth backend documentation: http://python-social-auth.readthedocs.org/en/latest/backends/index.html#social-backends
+.. _python-social-auth backend documentation: http://python-social-auth.readthedocs.io/en/latest/backends/index.html#social-backends
 
 .. _IMS LTI 1.1 Consumer Launch: http://www.imsglobal.org/developers/LTI/test/v1p1/lms.php
 
@@ -404,7 +404,7 @@
 
 .. _Dogwood blog post: https://open.edx.org/blog/newest-open-edx-release-dogwood-now-available
 
-.. _Adding E-Commerce to the Open edX Platform (Dogwood): http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/named-release-dogwood.rc/ecommerce/index.html
+.. _Adding E-Commerce to the Open edX Platform (Dogwood): http://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/named-release-dogwood.rc/ecommerce/index.html
 
 .. _Open edX Conference: http://con.openedx.org/
 
@@ -441,17 +441,19 @@
 .. _the documentation for Sass variable defaults: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_
 .. _Sass/CSS Styleguide: https://github.com/edx/ux-pattern-library/wiki/Styleguide:-Sass-&-CSS
 
-.. _Certificates Blog: http://blog.edx.org/news-about-edx-certificates?track=blog
-
 .. _News About edX Certificates: http://blog.edx.org/news-about-edx-certificates?track=blog
 
 .. _edX course catalog: https://www.edx.org/course-list/allschools/verified/allcourses`
+
+.. _edX Programs: https://www.edx.org/course?program=all
 
 .. _Verified Certificates: https://www.edx.org/verified-certificate
 
 .. _XSeries Programs: https://www.edx.org/xseries
 
 .. _MicroMasters Programs: https://www.edx.org/micromasters
+
+.. _Professional Certificate Programs: https://www.edx.org/professional-certificate
 
 .. _financial assistance application: https://courses.edx.org/financial-assistance
 
@@ -485,3 +487,40 @@
 
 .. _Adding a Video ID:  https://youtu.be/7Yc1Z8RLYxM
 
+.. _OID: https://en.wikipedia.org/wiki/Object_identifier
+
+.. _URN: https://en.wikipedia.org/wiki/Uniform_Resource_Name
+
+.. _eduPersonPrincipalName: https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-201203.html#eduPersonPrincipalName
+
+.. _eduPersonEntitlement: https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-201203.html#eduPersonEntitlement
+
+.. _eduPerson Object Class Specification: https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-201203.html
+
+.. _official Google instructions: https://developers.google.com/+/web/signin/#set_up_google_sign-in_for_google
+
+.. _Google Developers Console: https://console.developers.google.com/project/_/apiui/apis/library
+
+.. _Facebook for Developers: https://developers.facebook.com/apps/?action=create
+
+.. _LinkedIn Developers: https://www.linkedin.com/secure/developer
+
+.. _Microsoft Sign In: https://account.live.com
+
+.. _Azure account creation: https://azure.microsoft.com/en-us/pricing/free-trial
+
+.. _Azure sign in: https://portal.azure.com
+
+.. _AWS template file: https://github.com/edx/edx-platform/blob/b3462e5b1c3cc45ad8673f3f12e84fa17ffa6b64/lms/envs/aws.py#L586-L596
+
+.. _random and highly secure password: https://github.com/edx/edx- platform/blob/46d69eba/common/djangoapps/third_party_auth/pipeline.py#L392-L410
+
+.. _OAuth backends supported by python-social-auth v0.2.12: http://python-social-auth.readthedocs.io/en/latest/backends/index.html#social-backends
+
+.. _python-social-auth supported backend: http://python-social-auth.readthedocs.io/en/latest/backends/index.html#social-backends
+
+.. _list of python-social-auth backends: https://github.com/omab/python-social-auth/tree/master/social/backends
+
+.. _python-social-auth documentation: http://python-social-auth.readthedocs.io/en/latest/index.html
+
+.. _the default value in the aws.py file: https://github.com/edx/edx-platform/blob/b3462e5b1c3cc45ad8673f3f12e84fa17ffa6b64/lms/envs/aws.py#L586-L596

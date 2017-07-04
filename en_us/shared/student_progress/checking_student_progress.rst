@@ -13,7 +13,7 @@ This topic describes how to complete several end-of-course tasks.
 
 For more information, see the following other topics about certificates.
 
-* :ref:`Setting Up Course Certificates`
+* :ref:`Setting Up Certificates`
 * :ref:`Reporting Certificate Data`
 
 ****************************************
@@ -33,6 +33,9 @@ see :ref:`Access_grades`.
 
 The learner's final grade and the grading configuration you set in Studio
 determine whether the learner has earned a certificate for the course.
+
+
+.. _Issuing Certificates:
 
 ********************
 Issuing Certificates

@@ -38,12 +38,13 @@ your proctoring session review as well as a passing grade on the exam itself.
 For more information about academic course credit, see :ref:`SFD Academic
 Course Credit`.
 
-Proctored exams are indicated in the course with a pencil icon and a
+Proctored exams are indicated on the **Course** page with a pencil icon and a
 "Proctored Option Available" label.
+
 
 .. image:: /Images/Proctoring_PencilIcon.png
  :width: 200
- :alt: Course navigation in the LMS showing an exam with a pencil icon and
+ :alt: The course outline in the LMS showing an exam with a pencil icon and
      a "Proctored Option Available" label.
 
 .. note:: Proctored exams are visible only if you are enrolled in the verified
@@ -51,10 +52,9 @@ Proctored exams are indicated in the course with a pencil icon and a
    same or an equivalent exam as a regular exam, without the requirement for
    online proctoring.
 
-   If you want to be eligible to purchase academic credit for passing your
-   course, make sure you enroll in or upgrade to the verified track as early
-   as possible during the course, so that you do not miss any credit
-   eligibility opportunities.
+   If you want to be eligible for credit for passing your course, make sure you
+   enroll in or upgrade to the verified track as early as possible during the
+   course, so that you do not miss any credit eligibility opportunities.
 
 .. _Choosing to Take a Proctored Exam:
 
@@ -78,7 +78,7 @@ proctored option again for that exam.
 When you agree to take a proctored exam, you are guided through the steps to
 install and set up the proctoring software. The proctoring setup process
 includes an identity verification step and a required webcam scan of the desk
-and room in which you will take the exam.
+and room in which you will take each exam.
 
 Your course might include a practice exam that you can take to make sure you
 can complete the proctoring setup steps on your computer. It usually includes
@@ -105,10 +105,11 @@ the exam before the due date.
 Before Taking a Proctored Exam
 **********************************
 
-Before you commit to taking an exam with online proctoring, make sure you know
-what proctoring involves, and make sure that your computer meets the
-requirements to run the proctoring software. Read the :ref:`edX Online
-Proctoring Rules <Online Proctoring Rules>`.
+Before you commit to taking an exam with online proctoring, make sure you
+understand what proctoring involves. Make sure that your computer :ref:`meets
+the requirements<Know Requirements for Online Proctoring>` to run the
+proctoring software, and :ref:`know the rules<Know Rules for Online
+Proctoring>` that you must adhere to for your proctored exam.
 
 .. note:: If you are a learner with disabilities, consult your organization's
    Disability Resources or talk with your course team if you need
@@ -116,11 +117,12 @@ Proctoring Rules <Online Proctoring Rules>`.
    to take the exam. If you need to request extra time or special allowances
    to complete the exam, do so before you make any choices on the exam page.
 
-.. _Know Rules for Online Proctoring:
 
-==============================================================
-Know the Rules and Requirements for Online Proctoring
-==============================================================
+.. _Know Requirements for Online Proctoring:
+
+============================================
+Know the Requirements for Online Proctoring
+============================================
 
 * You must be on certain versions of the Windows or Mac operating systems for
   the proctoring software to work. Check the `Proctoring Software System
@@ -135,8 +137,26 @@ Know the Rules and Requirements for Online Proctoring
   :ref:`list of edX supported browsers <Browsers>` to make sure you are using
   a supported browser.
 
-* Read the rules and requirements that are covered in the :ref:`Online
-  Proctoring Rules`.
+
+.. _Know Rules for Online Proctoring:
+
+========================================
+Know the Rules for Your Proctored Exam
+========================================
+
+Know the rules that you must adhere to for your proctored exam.
+
+Read the :ref:`edX Online Proctoring Rules<Online Proctoring Rules>`. These
+are the basic rules that most courses use for "closed book" exam situations.
+
+Some courses might use different rules for their proctored exams, such as
+allowing you to access reference material or to use a calculator or pen and
+paper during the exam. Your course team will tell you if your exam has special
+rules.
+
+If you are not told that your exam has different proctoring exam rules, make
+sure that you follow the edX Online Proctoring Rules.
+
 
 .. _Request Additional Time:
 
@@ -295,8 +315,9 @@ Take a Picture of Your Photo ID
 ================================
 
 To fulfill the identity check for online proctoring, you use your webcam to
-take a picture of a government-issued photo ID that clearly identifies you by
-your full name, and that can be used to confirm your identity.
+take a picture of a photo ID that has your photo and your name on the same
+side. The name shown on this ID must match the full name you use in your edX
+account.
 
 .. note:: If you do not complete this photo ID step, you cannot achieve a
    **Satisfactory** result for your proctoring review, and you cannot be
@@ -644,6 +665,9 @@ while the browser was closed. If your proctoring software was also stopped,
 contact edX Support. Depending on the circumstances, your course team will
 have to decide whether your proctored exam attempt is valid.
 
+
+.. _Completing a Proctored Exam:
+
 **********************************
 Completing a Proctored Exam
 **********************************
@@ -652,6 +676,8 @@ When you finish a proctored exam before the count down timer reaches 00:00,
 select **Submit** to submit your responses. The exam stops, and the data from
 your proctoring session is uploaded to the online proctoring service for
 review.
+
+.. _Proctoring Session Review Results:
 
 ====================================
 Proctoring Session Review Results

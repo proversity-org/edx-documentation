@@ -34,7 +34,10 @@ A
   The course page that provides potential learners with a course summary,
   prerequisites, a course video and image, and important dates.
 
-  For more information, see :ref:`partnercoursestaff:The Course About Page`.
+.. only:: Partners
+
+  For more information, see :ref:`partnercoursestaff:Pub Creating and
+  Announcing a Course`.
 
 
 **Accessible Label**
@@ -94,9 +97,10 @@ C
 
   A document issued to an enrolled learner who successfully completes a course
   with the required passing grade. Not all edX courses offer certificates, and
-  not all learners enroll as certificate candidates. For information about
-  setting up certificates for your course, see
-  :ref:`partnercoursestaff:Setting Up Course Certificates`.
+  not all learners enroll as certificate candidates.
+
+  For information about setting up certificates for your course, see
+  :ref:`Setting Up Certificates`.
 
 **Chapter**
 
@@ -207,6 +211,10 @@ C
   page. For more information, see :ref:`partnercoursestaff:Adding Course
   Updates and Handouts`.
 
+**course mode**
+
+  See :ref:`enrollment track<enrollment_track_g>`.
+
 **Course Navigation Pane**
 
   The navigation frame that appears at one side of the **Course** page in the
@@ -216,14 +224,6 @@ C
 
   See also :ref:`Unit Navigation Bar<U>`.
 
-.. _Run:
-
-**Course Run**
-
-  The term or time frame in which a specific offering of your course takes
-  place. You set the course run when you create your course. For more
-  information, see :ref:`partnercoursestaff:Creating a New Course`.
-
 .. _Course Page:
 
 **Course Page**
@@ -232,6 +232,22 @@ C
   course. Sections, subsections, units, and components are all accessed from
   the **Course** page. This page was formerly called the **Courseware** page.
 
+.. _Run:
+
+**course run**
+
+  A version of the course that runs at a particular time. Information about a
+  course run includes start and end dates, as well as staff and the languages
+  the course is available in. You can create a course run when you create a
+  course.
+
+  .. only:: Partners
+
+    For more information, see :ref:`Planning Course Run Information`.
+
+**Course Track**
+
+  See :ref:`enrollment track<enrollment_track_g>`.
 
 .. _Courseware:
 
@@ -368,6 +384,56 @@ E
   edx.org website to learners in embargoed countries. Learners cannot access
   restricted courses from an embargoed country. In some cases, depending on the
   terms of the embargo, learners cannot access any edX courses at all.
+
+**enrollment mode**
+
+  See :ref:`enrollment track<enrollment_track_g>`.
+
+.. _enrollment_track_g:
+
+**enrollment track**
+
+  Also called **course mode**, **course track**, **course type**, **enrollment
+  mode**, or **seat type**.
+
+  The enrollment track specifies the following items about a course.
+
+    * The type of certificate, if any, that learners receive if they pass the
+      course.
+    * Whether learners must verify their identity to earn a certificate, using
+      a webcam and a photo ID.
+    * Whether the course requires a fee.
+
+  The edX platform offers the following enrollment tracks.
+
+  * **audit**: The default enrollment track. This track does not offer
+    certificates, does not require identity verification, and does not require
+    a course fee.
+
+  * **verified**: This enrollment track offers verified certificates to
+    learners who pass the course, verify their identities, and pay a required
+    course fee. A course that offers the verified enrollment track also
+    automatically offers a free non-certificate enrollment track.
+
+  * **honor**: This enrollment track offers an honor code certificate to
+    learners who pass the course. This track does not require identity
+    verification and does not require a fee. Note, however, that as of December
+    2015, edx.org no longer offers honor code certificates. For more
+    information, see `News About edX Certificates`_.
+
+  .. only:: Open_edX
+
+    * **professional**: This enrollment track is used for professional
+      education courses. The professional enrollment track offers certificates,
+      requires identity verification, and requires a fee. Fees for the
+      professional enrollment track are generally higher than fees for the
+      verified enrollment track. Courses that offer the professional track do
+      not offer a free enrollment track.
+
+    * **professional (no ID)**: Like the professional enrollment track, this
+      track offers certificates and requires a fee. However, this track does
+      not require identity verification. Courses that offer the professional
+      (no ID) track do not offer a free enrollment track.
 
 
 .. _Exercises:
@@ -552,7 +618,7 @@ L
   A view that allows the course team to review all published units as learners
   see them, regardless of the release dates of the section and subsection that
   contain the units. For more information, see :ref:`partnercoursestaff:View
-  Your Live Course`.
+  Published Content`.
 
 **LON-CAPA**
 
@@ -696,7 +762,8 @@ P
   them, regardless of the unit status and regardless of whether the release
   dates have passed.
 
-  For more information, see :ref:`partnercoursestaff:Preview Course Content`.
+  For more information, see :ref:`partnercoursestaff:Preview Unpublished
+  Content`.
 
 
 .. _Problem Component:
@@ -768,6 +835,9 @@ R
 S
 ****
 
+**seat type**
+
+  See :ref:`enrollment track<enrollment_track_g>`.
 
 .. _Section_g:
 
@@ -788,12 +858,12 @@ S
 
 .. _Short Course Description:
 
-**Short Course Description**
+**short description**
 
   The description of your course that appears on the edX `Course List
   <https://www.edx.org/course-list>`_ page.
 
-  For more information, see :ref:`partnercoursestaff:Describe Your Course`.
+  For more information, see :ref:`Course Short Description Guidelines`.
 
 
 .. _Simple Editor_g:

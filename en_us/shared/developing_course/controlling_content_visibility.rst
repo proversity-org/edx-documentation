@@ -1,19 +1,21 @@
 .. _Controlling Content Visibility:
 
-###################################
-Controlling Content Visibility
-###################################
+############################################
+Controlling Content Visibility and Access
+############################################
 
 As a member of the course team, you must carefully control which content is
-visible to learners and when.
+available to which learners, and when. Visibility settings, together with
+publishing states, are used to hide content from learners while still allowing
+course staff to view it. Access settings are used to specify which learner
+groups can access a particular component within a unit.
 
-You control content visibility through these features in Studio.
+You can control content visibility and access using the following Studio
+features.
 
 .. contents::
   :local:
   :depth: 1
-
-These features work together to control content visibility for learners.
 
 
 .. _Release Dates:
@@ -22,10 +24,10 @@ These features work together to control content visibility for learners.
 Release Dates
 ***********************
 
-You specify release dates and times for the sections and subsections in an
-instructor-paced course. By defining release dates, you ensure that content is
-available to learners on a planned schedule, without requiring manual
-intervention while the course is running.
+In instructor-paced courses, you can specify release dates and times for
+sections and subsections. By defining release dates, you ensure that course
+content is available to learners on a planned schedule, without requiring
+manual intervention while the course is running.
 
 .. note:: Self-paced courses do not have release dates for sections and
   subsections. For more information about instructor-paced and self-paced
@@ -38,9 +40,8 @@ Published units are not visible to learners until the scheduled release date
 and time. When the section and subsection have different release schedules,
 published units are not visible until both dates have passed.
 
-Prior to release, content is visible to course team members by
-:ref:`previewing the course <Preview Course Content>` or :ref:`viewing the live
-course as staff<View Your Live Course>`.
+Course team members can access content that has not been released by
+:ref:`previewing the course <Preview Unpublished Content>`.
 
 .. note::
    When you set release times in Studio, times are in Coordinated Universal
@@ -88,41 +89,48 @@ the following topics.
 
 .. _Content Hidden from Students:
 
-*****************************
-Hiding Content from Learners
-*****************************
+*******************
+Visibility Settings
+*******************
 
-You can hide content from learners in both instructor-paced and self-paced
-courses. Such content is never visible to learners, regardless of the release
-and publishing status.
+You can use the visibility controls in Studio to hide content from learners in
+both instructor-paced and self-paced courses.
 
-You might hide a unit from learners, for example, when that unit contains an
-answer to a problem in another unit of that subsection. After the problem's due
-date, you could make the unit with the answer visible.
+You might choose to hide a unit from learners, for example, when that unit
+contains an answer to a problem in another unit in the same subsection. After
+the problem's due date, you can make the unit that contains the answer
+visible. You might also permanently hide a unit from learners if that unit
+provides instructions or guidance that is intended only for the course team.
+Only course team members would see that unit in the course.
 
-You might also hide a unit from learners if you want to use that unit to
-provide instructions or guidance meant only for the course team. Only course
-team members would see that unit in the course.
+Content that is hidden by being excluded from the course outline is never
+available to learners, regardless of the release and publishing status.
 
-.. note:: As a best practice, do not hide sections, subsections, or units that
-   contain graded content. When the platform performs grading for a learner,
-   the grading process does not include problems that are not included in the
-   course navigation for that learner. For more details, see :ref:`Hiding Graded
-   Content`.
+.. important::
+   Content that you make "invisible" to learners by excluding it
+   from the course outline is also excluded from grading. As a best practice,
+   do not hide sections, subsections, or units that contain graded content by
+   excluding them from the course outline.
+
+   Instead, if you want to prevent learners from accessing graded content at
+   certain times, you can use options to hide content based on due date or
+   course end date. For more information, see :ref:`Hiding Graded Content` and
+   :ref:`Hide a Subsection After its Due Date`.
 
 You can hide content at different levels, as described in the following topics.
 
-* :ref:`Sections<Hide a Section from Students>`
-* :ref:`Subsections<Hide a Subsection from Students>`
-* :ref:`Units<Hide a Unit from Students>`
+* :ref:`Hide a Section from Students`
+* :ref:`Hide a Subsection from Students`
+* :ref:`Hide a Unit from Students`
+* :ref:`Problem Results Visibility`
 
-.. note:: Units and subsections inherit visibility settings from their parent
+.. note::
+   Units and subsections inherit visibility settings from their parent
    subsections or sections. Be aware that when you make a previously hidden
    section or subsection visible to learners, all child subsections or units
    also become visible, unless you have explicitly hidden the subsection or
    unit. Subsections or units that are explicitly hidden remain hidden
    even when you change the visibility of their parent section or subsection.
-
 
 .. _Hiding Graded Content:
 
@@ -133,26 +141,68 @@ Hiding Graded Content
 Grading is affected if you hide sections, subsections, or units that contain
 graded problems in such a way that they are not included in the course
 navigation. When the platform performs grading for a learner, the grading
-process does not include problems that are not included in the course
-navigation for that learner.
+process does not include problems that are not included in that learner's
+course outline.
 
-.. note:: Grading is not affected when you hide the content of a subsection or
-   a timed exam based on due dates. For more information, see :ref:`Timed
-   Exams` and :ref:`Hide a Subsection After its Due Date`.
+If you want the problems in the subsection to remain visible, but you want to
+hide learners' results for these problems, see :ref:`Problem Results
+Visibility`.
+
+.. note:: As a best practice, do not hide graded sections, subsections, or
+   units by excluding them from the course outline. Content that is hidden in
+   this way is not included when the platform performs grading for learners.
+
+   Instead, if you want to prevent learners from accessing the content of a
+   subsection while the subsection itself remains visible in the course
+   navigation, you can use the option to hide a subsection or timed exam's
+   content based on date. In instructor-led courses, you can hide a subsection
+   based on its due date. In self-paced courses, you can hide a subsection
+   based on the course's end date. For more details, see :ref:`Hide a
+   Subsection After its Due Date`.
+
+
+.. _Access Settings:
+
+*******************
+Access Settings
+*******************
+
+In the course outline in Studio, you can use access settings to specify which
+learner groups can access a particular component within a unit. You can restrict
+access based on :ref:`content group<About Content Groups>` or :ref:`enrollment
+track<enrollment_track_g>`.
 
 
 .. _Content Groups:
 
-**************
+==============
 Content Groups
-**************
+==============
 
-If you have cohorts enabled in your course, you can use content groups to
-designate particular components in your course as visible only to specific
-groups of learners.
+If you have cohorts enabled in your course, you can use content groups to give
+access to particular components in your course only to specific groups of
+learners.
 
-For details, see :ref:`About Content Groups` and :ref:`Cohorted Courseware
-Overview`.
+For information about creating differentiated content based on cohorts, see
+:ref:`Cohorted Courseware Overview`.
+
+
+.. _Enrollment Track Groups:
+
+========================
+Enrollment Track Groups
+========================
+
+If your course has more than one enrollment track, you can designate specific
+content as being available to learners in each of the enrollment tracks.
+
+For example, you might provide the same practice assignments to all learners yet
+provide learners in the certificate track with different exams from non-
+certificate learners.
+
+For information about creating differentiated content based on enrollment track,
+see :ref:`Enrollment Track Specific Courseware Overview`.
+
 
 .. _configuring_prerequisite_content:
 
@@ -164,6 +214,12 @@ You can hide subsections of your course until learners complete other,
 prerequisite subsections. If a subsection has a prerequisite, it is not
 visible in the course navigation unless a learner has earned a minimum score in
 the prerequisite subsection.
+
+.. note::
+
+   You cannot use :ref:`open response assessments<Open Response Assessments 2>`
+   as the prerequisite for other course subsections.
+
 
 .. _enabling_subsection_gating:
 
@@ -206,7 +262,7 @@ earned a minimum score in a prerequisite subsection, follow these steps.
       indicated.
      :width: 600
 
-#. Select the **Access** tab.
+#. Select the **Advanced** tab.
 
 #. Select **Use as a Prerequisite** > **Make this subsection
    available as a prerequisite to other content**.
@@ -216,7 +272,7 @@ earned a minimum score in a prerequisite subsection, follow these steps.
 #. Select the **Configure** icon for the subsection that
    will be hidden until the prerequisite is met.
 
-#. Select the **Access** tab.
+#. Select the **Advanced** tab.
 
 #. In the **Limit Access** > **Prerequisite** menu, select the name of the
    subsection you want to specify as the prerequisite.
@@ -234,3 +290,6 @@ earned a minimum score in a prerequisite subsection, follow these steps.
 
 #. In the course outline, if a subsection has a prerequisite, the prerequisite
    name appears under the subsection name.
+
+  .. note:: Prerequisite course subsection settings are not retained when
+     you :ref:`export or import a course<Exporting and Importing a Course>`, or when you :ref:`re-run a course<Rerun a Course>`.

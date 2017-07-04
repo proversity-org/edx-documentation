@@ -58,7 +58,12 @@ Identity and Access Management
 For Amazon Identity and Access Management (IAM), create an IAM role for use
 by the EMR cluster. Assign all of the Elastic Compute Cloud (EC2) nodes in
 the cluster to this role. An option is to consider copying the contents of the
-`default EC2 role for Amazon EMR`_ used by AWS.
+`default IAM roles for Amazon EMR`_ used by AWS. The command
+``aws emr create-default-roles`` facilitates this task. For more information,
+see `default IAM roles for Amazon EMR`_.
+
+Also, you need to create a role named ``emr`` with the policy
+``AmazonElasticMapReduceforEC2Role`` for the EC2 instance profile.
 
 Make sure that an IAM user with administrative privileges is available for use.
 
@@ -209,48 +214,80 @@ Then, save this file to a temporary location such as ``/tmp/cluster.yml``.
             instance_groups: {
                 master: {
                     num_instances: 1,
-                    type: m1.medium,
+                    type: m3.xlarge,
                     market: ON_DEMAND,
                 },
                 core: {
                     num_instances: 2,
-                    type: m1.medium,
+                    type: m3.xlarge,
                     market: SPOT,
-                    bidprice: 0.03
+                    bidprice: 0.8
                 },
                 task: {
                     num_instances: 1,
-                    type: m1.medium,
+                    type: m3.xlarge,
                     market: SPOT,
-                    bidprice: 0.03
+                    bidprice: 0.8
                 }
             },
-            bootstrap_actions: {
-                security: {
-                    path: "s3://<your configuration bucket name here>/security.sh"
-                },
-                jobtrackerconfig: {
-                    path: "s3://elasticmapreduce/bootstrap-actions/configure-hadoop",
-                    args: [
-                        -m, "mapred.jobtracker.completeuserjobs.maximum=5",
-                        -m, "mapred.job.tracker.retiredjobs.cache.size=50",
-                        -m, "mapred.job.shuffle.input.buffer.percent=0.20"
-                    ]
-                }
-            },
+            release_label: emr-4.7.2,
+            applications: [ {name: Hadoop}, {name: Hive}, {name: Sqoop-Sandbox}, {name: Ganglia} ],
             steps: [
-                { type: hive_install },
+              {
+                type: script,
+                name: Install MySQL connector for Sqoop,
+                step_args: [ "s3://<your-analytics-packages-bucket>/install-sqoop", "s3://<your-analytics-packages-bucket>" ],
+                # You might want to set this to CANCEL_AND_WAIT while debugging step failures.
+                action_on_failure: TERMINATE_JOB_FLOW
+              }
+            ],
+            configurations: [
+              {
+                classification: mapred-site,
+                properties:
                 {
-                    type: script,
-                    name: Install Sqoop,
-                    step_args: [
-                        "s3://<your configuration bucket name here>/install-sqoop",
-                        "s3://<your configuration bucket name here>"
-                    ]
+                  mapreduce.framework.name: 'yarn',
+                  mapreduce.jobtracker.retiredjobs.cache.size: '50',
+                  mapreduce.reduce.shuffle.input.buffer.percent: '0.20',
                 }
+              },
+              {
+                classification: yarn-site,
+                properties:
+                {
+                  yarn.resourcemanager.max-completed-applications: '5'
+                }
+              }
             ],
             user_info: []
         }
+
+
+You might find you need to update Hadoop instance types and container
+sizes.  In particular, if you encounter jobs that are running out of
+physical memory, you might want to choose a larger instance.  If your
+instance is a good size but being underutilized, you might want to
+explicitly define larger values in the "mapred-site" configuration
+than would be provided by default in the instance size you are
+using. Here is an example of settings we use with an m3.2xlarge
+instance type.
+
+    .. code-block:: yaml
+
+              {
+                classification: mapred-site,
+                properties:
+                {
+                  mapreduce.framework.name: 'yarn',
+                  mapreduce.jobtracker.retiredjobs.cache.size: '50',
+                  mapreduce.reduce.shuffle.input.buffer.percent: '0.20',
+                  mapreduce.map.java.opts: '-Xmx2458m',
+                  mapreduce.reduce.java.opts: '-Xmx4916m',
+                  mapreduce.map.memory.mb: '3072',
+                  mapreduce.reduce.memory.mb: '6144'
+                }
+              }
+
 
 ============
 EMR Cluster
@@ -315,10 +352,7 @@ Example Output
         TASK: [user | assign admin role to admin users] *******************************
         skipping: [10.0.1.236]
 
-        TASK: [user | copy github key[s] to .ssh/authorized_keys2] ********************
-        skipping: [10.0.1.236]
-
-        TASK: [user | copy additional authorized keys] ********************************
+        TASK: [user | copy github key[s] to .ssh/authorized_keys] ********************
         skipping: [10.0.1.236]
 
         TASK: [user | create bashrc file for normal users] ****************************

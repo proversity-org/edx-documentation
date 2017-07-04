@@ -11,6 +11,60 @@ The following information summarizes what is new in edX Studio.
   :depth: 2
 
 *************************
+Week ending 10 March 2017
+*************************
+
+.. include:: 2017/studio/studio_2017-03-10.rst
+
+*************************
+Week ending 3 Feb 2017
+*************************
+
+.. include:: 2017/studio/studio_2017-02-03.rst
+
+*************************
+Week ending 27 Jan 2017
+*************************
+
+.. include:: 2017/studio/studio_2017-01-27.rst
+
+*************************
+Week ending 13 Jan 2017
+*************************
+
+.. include:: 2017/studio/studio_2017-01-13.rst
+
+*************************
+22 Dec 2016 to 6 Jan 2017
+*************************
+
+.. include:: 2017/studio/studio_2017-01-06.rst
+
+*************************
+Week of 19 December 2016
+*************************
+
+.. include:: 2016/studio/studio_2016-12-19.rst
+
+*************************
+Week of 12 December 2016
+*************************
+
+.. include:: 2016/studio/studio_2016-12-12.rst
+
+*************************
+Week of 5 December 2016
+*************************
+
+.. include:: 2016/studio/studio_2016-12-05.rst
+
+*************************
+Week of 28 November 2016
+*************************
+
+.. include:: 2016/studio/studio_2016-11-28.rst
+
+*************************
 Week of 7 November 2016
 *************************
 
