@@ -1,26 +1,37 @@
-.. _Processing Video Files Index:
+.. _Creating and Adding Video Content:
 
-############################
-Adding Video Content
-############################
+####################################
+Creating and Adding Video Content
+####################################
 
-This section describes the workflow for creating videos and uploading them for
-use in an edx.org course.
+Videos in a course supplement active learning components, such as discussions
+and problems. Videos can be effective for a number of purposes, such as
+presenting motivating material, showing experiments, and reducing cognitive
+load for complex content. For more information about how learners can interact with course videos, see
+:ref:`Video Player`.
 
-* For information about how to develop your course content in the Studio
-  Outline page, see :ref:`Developing Your Course Index`.
+When you create video content, you need to keep various guidelines in mind.
+This section describes these guidelines, as well as video technical
+specifications, how to add video content to your course, and how to specify
+options for your videos.
 
-* For information about using video components to add the videos to your
-  course, see :ref:`Working with Video Components`.
+.. important::
 
-.. note:: The information and procedures in this section apply only to
- courses that run on the edx.org site. For information about adding video files
- to courses that run on Edge, see :ref:`Working with Video Components`.
+   It is very important that all of your videos are accessible to learners with
+   disabilities. Be sure to review :ref:`Creating Accessible Media` before you
+   create videos for your course.
 
 .. toctree::
    :maxdepth: 2
 
-   video_overview
-   video_prereqs
-   video_uploads
-   video_course
+   create_video
+   create_transcript
+   upload_video_edx/index
+   upload_video_edge
+   add_video_to_course
+   additional_video_options
+   additional_transcript_options
+   create_preroll_video
+   troubleshoot_video
+
+.. include:: ../../../links/links.rst

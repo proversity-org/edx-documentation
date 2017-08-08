@@ -1,4 +1,5 @@
 # Used for documentation gathering
+
 git+https://github.com/proversity-org/edx-sphinx-theme.git@proversity#egg=edx-sphinx-theme
 sphinx==1.4.9
 sphinx_rtd_theme==0.1.5

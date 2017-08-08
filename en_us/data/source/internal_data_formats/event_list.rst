@@ -15,21 +15,21 @@ A, B, C
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
      - Description
    * - ``add-forum-admin``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``add-forum-community-TA``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``add-forum-mod``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``add-instructor``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``add-or-remove-user-group``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``book``
      - :ref:`pdf`
 
@@ -41,25 +41,25 @@ D, E, F
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
      - Description
    * - ``delete-student-module-state``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``dump-answer-dist-csv``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``dump-graded-assignments-config``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``dump-grades``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``dump-grades-csv``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``dump-grades-csv-raw``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``dump-grades-raw``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``edx.bookmark.accessed``
      - :ref:`bookmark_events`
    * - ``edx.bookmark.added``
@@ -108,6 +108,8 @@ D, E, F
      - :ref:`notes`
    * - ``edx.course.student_notes.viewed``
      - :ref:`notes`
+   * - ``edx.course.tool.accessed``
+     - :ref:`course_resources`
    * - ``edx.done.toggled``
      - :ref:`Course Content Completion Events`
    * - ``edx.drag_and_drop_v2.feedback.closed``
@@ -130,6 +132,8 @@ D, E, F
      - :ref:`forum_events`
    * - ``edx.forum.thread.created``
      - :ref:`forum_events`
+   * - ``edx.forum.thread.viewed``
+     - :ref:`forum_events`
    * - ``edx.forum.thread.voted``
      - :ref:`forum_events`
    * - ``edx.googlecomponent.calendar.displayed``
@@ -140,6 +144,8 @@ D, E, F
      - :ref:`grading_events`
    * - ``edx.grades.problem.rescored``
      - :ref:`grading_events`
+   * - ``edx.grades.problem.score_overridden``
+     - :ref:`grading_events`
    * - ``edx.grades.problem.state_deleted``
      - :ref:`grading_events`
    * - ``edx.grades.problem.submitted``
@@ -147,9 +153,9 @@ D, E, F
    * - ``edx.grades.subsection.grade_calculated``
      - :ref:`grading_events`
    * - ``edx.instructor.report.downloaded``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`course_reporting_events`
    * - ``edx.instructor.report.requested``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`course_reporting_events`
    * - ``edx.librarycontentblock.content.assigned``
      - :ref:`library_events`
    * - ``edx.librarycontentblock.content.removed``
@@ -308,13 +314,13 @@ G, H, I
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
      - Description
    * - ``get-student-progress-page``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`course_reporting_events`
    * - ``hide_transcript``
      - :ref:`video`
 
@@ -325,25 +331,25 @@ J, K, L
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
      - Description
    * - ``list-beta-testers``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``list-forum-admins``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`list_forum_roles`
    * - ``list-forum-community-TAs``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`list_forum_roles`
    * - ``list-forum-mods``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`list_forum_roles`
    * - ``list-instructors``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``list-staff``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``list-students``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`reporting_events_with_only_common_fields`
    * - ``load_video``
      - :ref:`video`
 
@@ -354,7 +360,7 @@ M, N, O
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
@@ -403,7 +409,7 @@ P, Q, R
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
@@ -431,25 +437,25 @@ P, Q, R
    * - ``problem_show``
      - :ref:`problem`
    * - ``remove-forum-admin``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``remove-forum-community-TA``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``remove-forum-mod``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`manage_forum_roles`
    * - ``remove-instructor``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``rescore-all-submissions``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``rescore-student-submission``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``reset-all-attempts``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
    * - ``reset_problem``
      - :ref:`problem`
    * - ``reset_problem_fail``
      - :ref:`problem`
    * - ``reset-student-attempts``
-     - :ref:`Instructor_Event_Types`
+     - :ref:`management_events`
 
 .. _ST:
 
@@ -458,7 +464,7 @@ S, T
 *******
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
@@ -517,7 +523,7 @@ U, V, W, X, Y, Z
 *********************
 
 .. list-table::
-   :widths: 40 40
+   :widths: 40 60
    :header-rows: 1
 
    * - Event
