@@ -37,7 +37,7 @@ jobs:
       - run:
           name: pip install shared tools
           command: 'pip install -r shared/tools.txt'
-      - test:
+      - run:
           name: full test suite
           command: './run_tests.sh en_us/install_operations/'
       - run:
