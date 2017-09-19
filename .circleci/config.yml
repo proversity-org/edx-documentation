@@ -46,7 +46,7 @@ jobs:
       - deploy:
           name: deploy master documentation
           command: |
-            ECHO "aws s3 sync $DIR s3://$DESTINATION_BUCKET/ --delete --profile "$AWS_PROFILE""
+            echo "aws s3 sync $DIR s3://$DESTINATION_BUCKET/ --delete --profile "$AWS_PROFILE""
             aws s3 sync $DIR s3://$DESTINATION_BUCKET/ --delete --profile "$AWS_PROFILE"
             aws cloudfront create-invalidation --cli-input-json '{"DistributionId":"'"$AWS_CLOUDFRONT_ID"'","InvalidationBatch":{"Paths":{"Quantity":2,"Items":["/index.html","/*"]},"CallerReference": "'$(date "+%s")'"}}'
 
