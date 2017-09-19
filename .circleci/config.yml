@@ -1,0 +1,59 @@
+version: 2
+jobs:
+  build_master:
+    machine:
+        enabled: true
+        environment:
+            AWS_PROFILE: default
+            DESTINATION_BUCKET: docs.proversity.org
+    DIR: en_us/install_operations/build/html
+    working_directory: ~/edx-doccumentation/en_us/install_operations/build/html
+    steps:
+      - checkout
+      - run:
+          name: apt-get update
+          command: 'sudo apt-get update'
+      - run:
+          name: apt-get install python-sphinx
+          command: 'sudo apt-get install python-sphinx'
+      - run:
+           name: apt-get install python
+           command: 'sudo apt-get install python-dev --fix-missing'
+      - run:
+          name: pip install awscli
+          command: 'pip install awscli'
+      - run:
+          name: pip install setuptools
+          command: 'pip install -U pip setuptools'
+      - run:
+          name: set region
+          command: 'aws configure set default.region eu-west-1'
+      - run:
+          name: configure clooudfront
+          command: 'aws configure set preview.cloudfront true'
+      - run:
+          name: pip install travis requirements
+          command: 'pip install -r shared/travis_requirements.txt'
+      - run:
+          name: pip install shared tools
+          command: 'pip install -r shared/tools.txt'
+      - test:
+          name: full test suite
+          command: './run_tests.sh en_us/install_operations/'
+      - run:
+          name: compile documentation
+          command: 'cd en_us/install_operations/ && make html'
+      - deploy:
+          name: deploy master documentation
+          command: '/bin/bash deploy.sh'
+          no_output_timeout: 15m
+
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build_master:
+          filters:
+            branches:
+              only: master
