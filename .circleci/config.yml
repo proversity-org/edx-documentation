@@ -4,10 +4,10 @@ jobs:
     machine:
         enabled: true
         environment:
-            AWS_PROFILE: deployer
+            AWS_PROFILE: CI-deployer-EDX-Documenation
             DESTINATION_BUCKET: docs.proversity.org
             DIR: en_us/install_operations/build/html
-    working_directory: ~/edx-doccumentation
+    working_directory: ~/edx-documentation
     steps:
       - checkout
       - run:
@@ -46,7 +46,6 @@ jobs:
       - deploy:
           name: deploy master documentation
           command: |
-            echo "aws s3 sync $DIR s3://$DESTINATION_BUCKET/ --delete --profile "$AWS_PROFILE""
             aws s3 sync $DIR s3://$DESTINATION_BUCKET/ --delete --profile "$AWS_PROFILE"
             aws cloudfront create-invalidation --cli-input-json '{"DistributionId":"'"$AWS_CLOUDFRONT_ID"'","InvalidationBatch":{"Paths":{"Quantity":2,"Items":["/index.html","/*"]},"CallerReference": "'$(date "+%s")'"}}'
 
